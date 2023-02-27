@@ -14,7 +14,7 @@ body {
   background-position-y: 100vh, -40vh;
 }
 .header {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   padding-left: 10em;
   /* display: flex; */
   /* justify-content: s; */
@@ -68,13 +68,13 @@ body {
 .c1 {
   margin-top: 10%;
   margin-left: -2%;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   /* width: 27%; */
   position: relative;
   left: 15%;
 }
 .c1-first {
-  color: hsl(233, 12%, 13%);
+  color: hsl(228, 39%, 23%);
   width: 30%;
   font-size: 3em;
   font-weight: 800;
@@ -87,7 +87,7 @@ body {
   color: hsl(227, 12%, 61%);
 }
 .c1-third {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   margin-top: 2.5em;
 }
 .c1-third a {
@@ -112,4 +112,52 @@ body {
 .c1-wrapper-second img {
   /* width: 20vw; */
   height: 65vh;
+}
+.c2 {
+  display: flex;
+  position: relative;
+  bottom: 40vh;
+  /* width: 50%; */
+}
+.c2-wrapper-first {
+  /* border: 2px solid red; */
+  width: 28%;
+  position: relative;
+  left: 12vw;
+}
+.c2-wrapper-second {
+  /* border: solid; */
+  position: relative;
+  left: 32vw;
+  top: -2vh;
+  /* width: 40%; */
+}
+.c2-wrapper-second-item h2{
+    font-size: 1em;
+    color: hsl(228, 39%, 23%);
+}
+.c2-wrapper-second-item p{  
+    line-height: 1.5em;
+    color: hsl(227, 12%, 61%);
+}
+.c2-wrapper-first h1 {
+  color: hsl(228, 39%, 23%);
+  font-size: 2.3em;
+  /* font-size: .3em; */
+}
+.c2-wrapper-first p {
+  color: hsl(227, 12%, 61%);
+  line-height: 1.5em;
+  /* font-size: 1em; */
+}
+.c2-wrapper-second-index{
+    border-radius: 4em;
+    /* border: 2px solid red; */
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    width: fit-content;
+    padding: .5em 1.5em;
+    position: relative;
+    top: 5.7vh;
+    left: -6vw;
 }
