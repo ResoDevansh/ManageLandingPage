@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   background-position-x: -30vw, 65vw;
   background-position-y: 100vh, -40vh;
+  overflow-x: hidden;
 }
 .header {
   /* border: 2px solid blue; */
@@ -175,11 +176,14 @@ body {
 }
 .c3-card {
   /* display: flex; */
+  /* border: 2px solid green; */
+  height: 40vh;
   justify-content: space-between;
 }
 .c3-button {
+  border: 2px solid red;
   margin: auto;
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   font-size: 0.7em;
   width: 6vw;
   padding: 0.9em 1.5em;
@@ -194,6 +198,30 @@ body {
   cursor: pointer;
   color: rgba(255, 255, 255, 0.6);
 }
-.c3-button:hover{
+.c3-button:hover {
   cursor: pointer;
+}
+.special {
+  position: relative;
+  /* display: inline-block; */
+  display: none;
+  top: -27.5vh;
+}
+#next{
+  height: 7vh;
+  width: 2vw;
+  position: relative;
+  top: -30vh;
+  left: 48vw;
+  /* border: solid red;
+   background-color: aqua; */
+}
+#prev{
+  /* border: solid red;
+    background-color: aqua; */
+  height: 5vh;
+  width: 2vw;
+  position: relative;
+  top: -36vh;
+  left: -48vw;
 }
