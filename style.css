@@ -275,3 +275,35 @@ body {
     -moz-box-shadow: 0px 5px 23px 0px rgba(250, 184, 130, 1);
     box-shadow: 0px 5px 23px 0px rgba(250, 184, 130, 1);   */
 }
+.footer{
+  display: flex;
+  margin-top: -15vh;
+  background-color: hsl(233, 12%, 13%);
+}
+#footer-first{
+  height: 20vh;
+  padding: 5vh;
+  margin-left: 15vh;
+  margin-top: 2vh;
+}
+#footer-first a{
+  margin-right: .5em;
+  overflow: hidden;
+  /* border: 2px solid red; */
+}
+#footer-first a img{
+  position: relative;
+  top: .2em;
+  /* margin-top: 1em; */
+  /* border: solid white; */
+}
+#footer-first a:hover{
+  cursor: pointer;
+}
+#footer-first-img{
+  margin-bottom: 10vh;
+  color: white;
+}
+#footer-first-img:hover{
+  cursor: pointer;
+}
