@@ -14,7 +14,9 @@
 
     <title>Frontend Mentor | Manage landing page</title>
     <link rel="stylesheet" href="./style.css" type="text/css" />
-    <script defer src="./script.js"></script>
+    <script defer src="./script.js">
+      // import inputHandler from './script.js';
+    </script>
   </head>
   <body>
     <div class="header">
@@ -105,15 +107,30 @@
     <div class="footer">
       <div id="footer-first">
         <div id="footer-first-img"><img src="./images/logo.svg" /></div>
-        <a><img src='./images/icon-facebook.svg'></a>
-        <a><img src='./images/icon-youtube.svg'></a>
-        <a><img src='./images/icon-twitter.svg'></a>
-        <a><img src='./images/icon-pinterest.svg'></a>
-        <a><img src='./images/icon-instagram.svg'></a>
+        <a><img src="./images/icon-facebook.svg" /></a>
+        <a><img src="./images/icon-youtube.svg" /></a>
+        <a><img src="./images/icon-twitter.svg" /></a>
+        <a><img src="./images/icon-pinterest.svg" /></a>
+        <a><img src="./images/icon-instagram.svg" /></a>
       </div>
-      <div id="footer-second"></div>
-      <div id="footer-third"></div>
-      <div id="footer-fourth"></div>
+      <div id="footer-second">
+        <a href="#">Home</a><br /><a href="">Pricing</a><br /><a href=""
+          >Products</a
+        ><br /><a href="">About Us</a>
+      </div>
+      <div id="footer-third">
+        <a href="">Careers</a><br><a href="">Community</a><br><a href=""
+          >Privacy Policy</a
+        >
+      </div>
+      <div id="footer-fourth">
+        <form>
+          <input id="footer-fourth-input" type='email' placeholder="Updates in your inbox">
+          <button id="footer-fourth-btn">Go</button>
+        </form>
+        <p id="modal">Please insert a valid email</p>
+        <p id="copy">Copyright 2020. All Rights Reserved</p>
+      </div>
     </div>
     <!--
 
