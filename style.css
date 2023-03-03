@@ -183,7 +183,7 @@ body {
   justify-content: space-between;
 }
 .c3-button {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin: auto;
   /* margin-top: 10vh; */
   font-size: 0.7em;
@@ -215,12 +215,14 @@ body {
   position: relative;
   top: -30vh;
   left: 48vw;
+  cursor: pointer;
   /* border: solid red;
    background-color: aqua; */
 }
 #prev {
   /* border: solid red;
     background-color: aqua; */
+  cursor: pointer;
   height: 5vh;
   width: 2vw;
   position: relative;
@@ -283,7 +285,7 @@ body {
   background-color: hsl(233, 12%, 13%);
 }
 #footer-first {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   height: 20vh;
   padding: 5vh;
   margin-left: 15vh;
@@ -300,7 +302,7 @@ body {
   /* margin-top: 1em; */
   /* border: solid white; */
 }
-#footer-first a:active{
+#footer-first a:active {
   background-color: hsl(12, 88%, 59%);
 }
 #footer-first a:hover {
@@ -314,7 +316,7 @@ body {
   cursor: pointer;
 }
 #footer-second {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* width: 5vw; */
   height: 20vh;
   margin-top: 2vh;
@@ -335,26 +337,26 @@ body {
   /* border: 2px solid red; */
 }
 #footer-second a:active,
-#footer-third a:active{
+#footer-third a:active {
   /* color: rgba(255,255,255,255,.1); */
   color: hsl(12, 88%, 59%);
 }
 #footer-third {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 20vh;
   margin-top: 2vh;
   margin-left: 20vh;
   padding: 5vh;
 }
-#footer-fourth{
+#footer-fourth {
   /* border: 2px solid blue; */
 }
-form{
+form {
   /* border: 2px solid red; */
   margin-left: 20em;
   margin-top: 4em;
 }
-#footer-fourth-input{
+#footer-fourth-input {
   padding: 1em;
   border-radius: 3em;
   border: transparent;
@@ -362,7 +364,7 @@ form{
 /* #footer-fourth-input:: active{
   border: 1px solid hsl(12, 88%, 59%);
 } */
-#footer-fourth-btn{
+#footer-fourth-btn {
   background-color: hsl(12, 88%, 59%);
   color: white;
   border: 0px;
@@ -371,7 +373,7 @@ form{
   padding-right: 1.5em;
   border-radius: 2em;
 }
-#footer-fourth-btn{
+#footer-fourth-btn {
   background-color: hsl(12, 88%, 59%);
   color: white;
   border: 0px;
@@ -380,8 +382,8 @@ form{
   padding-right: 1.5em;
   border-radius: 2em;
 }
-#footer-fourth p{
-  font-size: .8em;
+#footer-fourth p {
+  font-size: 0.8em;
   margin-left: 30em;
   margin-top: 5em;
   color: hsl(227, 12%, 61%);
@@ -392,17 +394,21 @@ form{
   margin-top: 5em;
   color: hsl(227, 12%, 61%);
 } */
-#footer-fourth-btn:active{
-  background-color: hsla(12, 88%, 59%,.8);
+#footer-fourth-btn:active {
+  background-color: hsla(12, 88%, 59%, 0.8);
 }
 #footer-fourth-btn:hover {
   cursor: pointer;
 }
-#modal{
+#modal {
   color: hsl(12, 88%, 59%) !important;
-  font-size: .7em !important;
+  font-size: 0.7em !important;
   position: relative;
   top: -7vh;
   font-style: italic;
   display: none;
+}
+#copy {
+  /* border: 2px solid lawngreen; */
+  position: relative;
 }

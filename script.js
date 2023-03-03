@@ -55,8 +55,8 @@ const inputHandler = (e) => {
   let isValid = true;
   let email = e.target.value,
     n = email.length,
-    period,
-    atr=0,per=0;
+    period,lastAtr,
+    atr=0,per=0,indexAtr;
   for (let i = n - 1; i >= 0; i--) {
     if (email[i] === ".") {
       period = i;
@@ -70,10 +70,18 @@ const inputHandler = (e) => {
     }
   }
   for (let i = 0; i < n; i++){
+    if (email[i] === '@') {
+      lastAtr = i;
+    }
+  }
+  for (let i = 0; i < n; i++){
     if (email[i] === '@') atr++; 
     if (email[i] === '.') per++;
     if (!(email[i] === '.' || email[i] === '_' || (email[i] === '@' || email[i] === '-') || (email[i] >= 'a' && email[i] <= 'z') || (email[i] >= 'A' && email[i] <= 'Z') || (email[i] <= '9' && email[i] >= '0')))
       isValid = false;
+  }
+  if (lastAtr > period) {
+    isValid = false;
   }
   if (indexAtr <= 0) {
     isValid = false;
@@ -84,14 +92,18 @@ const inputHandler = (e) => {
   if (atr > 1) {
     isValid = false;
   }
-  if (n - period-1 <2) {
+  if (n - period-1 <2 || per===0 || atr===0) {
     isValid = false;
   }
   if (!isValid) {
     modal.style.display = 'block';
     // copyright.style.position = 'absolute';  
+    copyright.style.top = '-5em';
   }
-  else modal.style.display = 'none';
+  else {
+    modal.style.display = 'none';
+    copyright.style.top = '0.5em';
+  }
   console.log(modal.style.display);
 };
 input.addEventListener("change", inputHandler);
